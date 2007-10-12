@@ -13,6 +13,12 @@ public class BlogPostImpl implements IBlogPost {
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
+
+	//BlogPost is removed from blog - remove all comments
+	protected void finalize () {
+		comment.clear();
+    }
+	
 	private String title;
 
 	/* (non-Javadoc)
@@ -84,12 +90,12 @@ public class BlogPostImpl implements IBlogPost {
 	 *     collection_type="Comment"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<CommentImpl> comment;
+	private ArrayList<IComment> comment= new ArrayList<IComment>();
 
 	/* (non-Javadoc)
 	 * @see IBlogPost#getComment()
 	 */
-	public ArrayList<CommentImpl> getComment() {
+	public ArrayList<IComment> getComment() {
 		// begin-user-code
 		return comment;
 		// end-user-code
@@ -98,7 +104,7 @@ public class BlogPostImpl implements IBlogPost {
 	/* (non-Javadoc)
 	 * @see IBlogPost#setComment(java.util.ArrayList)
 	 */
-	public void setComment(ArrayList<CommentImpl> theComment) {
+	public void setComment(ArrayList<IComment> theComment) {
 		// begin-user-code
 		comment = theComment;
 		// end-user-code
@@ -109,12 +115,12 @@ public class BlogPostImpl implements IBlogPost {
 	 *     collection_type="Picture"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<PictureImpl> picture;
+	private ArrayList<IPicture> picture = new ArrayList<IPicture>();
 
 	/* (non-Javadoc)
 	 * @see IBlogPost#getPicture()
 	 */
-	public ArrayList<PictureImpl> getPicture() {
+	public ArrayList<IPicture> getPicture() {
 		// begin-user-code
 		return picture;
 		// end-user-code
@@ -123,7 +129,7 @@ public class BlogPostImpl implements IBlogPost {
 	/* (non-Javadoc)
 	 * @see IBlogPost#setPicture(java.util.ArrayList)
 	 */
-	public void setPicture(ArrayList<PictureImpl> thePicture) {
+	public void setPicture(ArrayList<IPicture> thePicture) {
 		// begin-user-code
 		picture = thePicture;
 		// end-user-code
@@ -134,8 +140,7 @@ public class BlogPostImpl implements IBlogPost {
 	 */
 	public void addComment(IComment comment) {
 		// begin-user-code
-		// TODO Auto-generated method stub
-
+		this.comment.add(comment);
 		// end-user-code
 	}
 
@@ -144,8 +149,8 @@ public class BlogPostImpl implements IBlogPost {
 	 */
 	public void removeComment(IComment comment) {
 		// begin-user-code
-		// TODO Auto-generated method stub
-
+		this.comment.remove(comment);
+		comment = null;
 		// end-user-code
 	}
 
@@ -154,18 +159,17 @@ public class BlogPostImpl implements IBlogPost {
 	 */
 	public void addPicture(IPicture picture) {
 		// begin-user-code
-		// TODO Auto-generated method stub
-
+		this.picture.add(picture);
 		// end-user-code
-	}
+	} 
 
 	/* (non-Javadoc)
 	 * @see IBlogPost#removePicture(Picture)
 	 */
 	public void removePicture(IPicture picture) {
 		// begin-user-code
-		// TODO Auto-generated method stub
-
+		this.picture.remove(picture);
+		picture = null;
 		// end-user-code
 	}
 }

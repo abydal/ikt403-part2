@@ -429,7 +429,7 @@ public class StudentImpl implements IStudent {
 	 *     collection_type="Blog"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<BlogImpl> blog;
+	private IBlog blog;
 
 	/** 
 	 * @uml.annotations for <code>exam</code>
@@ -588,9 +588,9 @@ public class StudentImpl implements IStudent {
 		return null;
 	}
 
-	public ArrayList<IBlog> getBlog() {
+	public IBlog getBlog() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.blog;
 	}
 
 	public ArrayList<IComment> getComment() {
@@ -629,8 +629,8 @@ public class StudentImpl implements IStudent {
 		
 	}
 
-	public void setBlog(ArrayList<IBlog> theBlog) {
-		// TODO Auto-generated method stub
+	public void setBlog(IBlog theBlog) {
+		this.blog = theBlog;
 		
 	}
 

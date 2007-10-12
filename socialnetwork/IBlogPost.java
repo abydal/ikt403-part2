@@ -43,25 +43,25 @@ public interface IBlogPost {
 	 * @return the comment
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<CommentImpl> getComment();
+	public abstract ArrayList<IComment> getComment();
 
 	/** 
 	 * @param theComment the comment to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setComment(ArrayList<CommentImpl> theComment);
+	public abstract void setComment(ArrayList<IComment> theComment);
 
 	/** 
 	 * @return the picture
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<PictureImpl> getPicture();
+	public abstract ArrayList<IPicture> getPicture();
 
 	/** 
 	 * @param thePicture the picture to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setPicture(ArrayList<PictureImpl> thePicture);
+	public abstract void setPicture(ArrayList<IPicture> thePicture);
 
 	/** 
 	 * @param comment

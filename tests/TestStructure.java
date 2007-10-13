@@ -1,7 +1,7 @@
-package socialnetwork;
+package tests;
 
 import junit.framework.TestCase;
-
+import socialnetwork.*;
 public class TestStructure extends TestCase {
 
 	public TestStructure(String name) {

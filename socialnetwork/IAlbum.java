@@ -31,13 +31,13 @@ public interface IAlbum {
 	 * @return the picture
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<PictureImpl> getPicture();
+	public abstract ArrayList<IPicture> getPicture();
 
 	/** 
 	 * @param thePicture the picture to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setPicture(ArrayList<PictureImpl> thePicture);
+	public abstract void setPicture(ArrayList<IPicture> thePicture);
 
 	/** 
 	 * @return the _private
@@ -67,12 +67,12 @@ public interface IAlbum {
 	 * @param searchString
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void searchAlbum(String searchString);
+	public abstract ArrayList<IPicture> searchAlbum(String searchString);
 
 	/** 
 	 * @param searchString
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void searchTags(String searchString);
+	public abstract ArrayList<IPicture> searchTags(String searchString);
 
 }

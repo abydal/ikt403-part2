@@ -15,8 +15,9 @@ public class EventImpl implements IEvent {
 	 */
 	private Boolean active;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getActive()
+	/** 
+	 * @return the active
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public Boolean getActive() {
 		// begin-user-code
@@ -24,8 +25,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setActive(java.lang.Boolean)
+	/** 
+	 * @param theActive the active to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setActive(Boolean theActive) {
 		// begin-user-code
@@ -38,8 +40,9 @@ public class EventImpl implements IEvent {
 	 */
 	private String name;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getName()
+	/** 
+	 * @return the name
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public String getName() {
 		// begin-user-code
@@ -47,8 +50,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setName(java.lang.String)
+	/** 
+	 * @param theName the name to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setName(String theName) {
 		// begin-user-code
@@ -61,8 +65,9 @@ public class EventImpl implements IEvent {
 	 */
 	private String location;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getLocation()
+	/** 
+	 * @return the location
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public String getLocation() {
 		// begin-user-code
@@ -70,8 +75,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setLocation(java.lang.String)
+	/** 
+	 * @param theLocation the location to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setLocation(String theLocation) {
 		// begin-user-code
@@ -84,8 +90,9 @@ public class EventImpl implements IEvent {
 	 */
 	private Integer startDate;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getStartDate()
+	/** 
+	 * @return the startDate
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public Integer getStartDate() {
 		// begin-user-code
@@ -93,8 +100,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setStartDate(java.lang.Integer)
+	/** 
+	 * @param theStartDate the startDate to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setStartDate(Integer theStartDate) {
 		// begin-user-code
@@ -107,8 +115,9 @@ public class EventImpl implements IEvent {
 	 */
 	private Integer endDate;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getEndDate()
+	/** 
+	 * @return the endDate
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public Integer getEndDate() {
 		// begin-user-code
@@ -116,8 +125,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setEndDate(java.lang.Integer)
+	/** 
+	 * @param theEndDate the endDate to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setEndDate(Integer theEndDate) {
 		// begin-user-code
@@ -128,33 +138,11 @@ public class EventImpl implements IEvent {
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private IStudent student;
-
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getStudent()
-	 */
-	public IStudent getStudent() {
-		// begin-user-code
-		return student;
-		// end-user-code
-	}
-
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setStudent(socialnetwork.IStudent)
-	 */
-	public void setStudent(IStudent theStudent) {
-		// begin-user-code
-		student = theStudent;
-		// end-user-code
-	}
-
-	/** 
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
 	private String description;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getDescription()
+	/** 
+	 * @return the description
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public String getDescription() {
 		// begin-user-code
@@ -162,8 +150,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setDescription(java.lang.String)
+	/** 
+	 * @param theDescription the description to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setDescription(String theDescription) {
 		// begin-user-code
@@ -176,8 +165,9 @@ public class EventImpl implements IEvent {
 	 */
 	private IAlbum album;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getAlbum()
+	/** 
+	 * @return the album
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public IAlbum getAlbum() {
 		// begin-user-code
@@ -185,8 +175,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setAlbum(socialnetwork.IAlbum)
+	/** 
+	 * @param theAlbum the album to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setAlbum(IAlbum theAlbum) {
 		// begin-user-code
@@ -197,33 +188,11 @@ public class EventImpl implements IEvent {
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private IStudent arranges;
-
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getArranges()
-	 */
-	public IStudent getArranges() {
-		// begin-user-code
-		return arranges;
-		// end-user-code
-	}
-
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setArranges(socialnetwork.IStudent)
-	 */
-	public void setArranges(IStudent theArranges) {
-		// begin-user-code
-		arranges = theArranges;
-		// end-user-code
-	}
-
-	/** 
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
 	private Boolean _private;
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#get_private()
+	/** 
+	 * @return the _private
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public Boolean get_private() {
 		// begin-user-code
@@ -231,8 +200,9 @@ public class EventImpl implements IEvent {
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#set_private(java.lang.Boolean)
+	/** 
+	 * @param the_private the _private to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void set_private(Boolean the_private) {
 		// begin-user-code
@@ -245,21 +215,23 @@ public class EventImpl implements IEvent {
 	 *     collection_type="Comment"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<CommentImpl> comment;
+	private ArrayList<IComment> comment = new ArrayList<IComment>();
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getComment()
+	/** 
+	 * @return the comment
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public ArrayList<CommentImpl> getComment() {
+	public ArrayList<IComment> getComment() {
 		// begin-user-code
 		return comment;
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setComment(java.util.ArrayList)
+	/** 
+	 * @param theComment the comment to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void setComment(ArrayList<CommentImpl> theComment) {
+	public void setComment(ArrayList<IComment> theComment) {
 		// begin-user-code
 		comment = theComment;
 		// end-user-code
@@ -270,43 +242,68 @@ public class EventImpl implements IEvent {
 	 *     collection_type="EventRole"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<EventRoleImpl> eventrole;
+	public ArrayList<IEventRole> eventrole = new ArrayList<IEventRole>();
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#getEventrole()
+	/** 
+	 * @return the eventrole
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public ArrayList<EventRoleImpl> getEventrole() {
+	public ArrayList<IEventRole> getEventrole() {
 		// begin-user-code
 		return eventrole;
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#setEventrole(java.util.ArrayList)
+	/** 
+	 * @param theEventrole the eventrole to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void setEventrole(ArrayList<EventRoleImpl> theEventrole) {
+	public void setEventrole(ArrayList<IEventRole> theEventrole) {
 		// begin-user-code
 		eventrole = theEventrole;
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#addComment(socialnetwork.IComment)
+	/** 
+	 * @param comment
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void addComment(IComment comment) {
 		// begin-user-code
-		// TODO Auto-generated method stub
+		this.comment.add(comment);
+		// end-user-code
+	}
+
+	/** 
+	 * @param comment
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public void removeComment(IComment comment) {
+		// begin-user-code
+		this.comment.remove(comment);
+		comment = null;
+		// end-user-code
+	}
+	
+
+	/* (non-Javadoc)
+	 * @see IEvent#addParticipant(EventRole)
+	 */
+	public void addParticipant(IEventRole role) {
+		// begin-user-code
+		this.eventrole.add(role);
 
 		// end-user-code
 	}
 
 	/* (non-Javadoc)
-	 * @see socialnetwork.IEvent#removeComment(socialnetwork.IComment)
+	 * @see IEvent#removeParticipant(EventRole)
 	 */
-	public void removeComment(IComment comment) {
+	public void removeParticipant(IEventRole role) {
 		// begin-user-code
-		// TODO Auto-generated method stub
-
+		this.eventrole.remove(role);
+		role = null;
 		// end-user-code
 	}
+
 }

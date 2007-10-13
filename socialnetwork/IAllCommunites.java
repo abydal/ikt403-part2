@@ -1,28 +1,31 @@
 package socialnetwork;
-public interface IExam {
+import java.util.ArrayList;
+
+public interface IAllCommunites {
 
 	/** 
-	 * @return the grade
+	 * @return the communites
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract String getGrade();
+	public abstract ArrayList<ICommunity> getCommunites();
 
 	/** 
-	 * @param theGrade the grade to set
+	 * @param theCommunites the communites to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setGrade(String theGrade);
+	public abstract void setCommunites(ArrayList<ICommunity> theCommunites);
 
 	/** 
-	 * @return the course
+	 * @param community
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ICourse getCourse();
+	public abstract void addCommunity(ICommunity community);
 
 	/** 
-	 * @param theCourse the course to set
+	 * @param name
+	 * @return
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setCourse(ICourse theCourse);
+	public abstract ICommunity getCommunity(String name);
 
 }

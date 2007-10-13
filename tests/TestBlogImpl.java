@@ -1,8 +1,9 @@
-package socialnetwork;
+package tests;
 
 import java.util.ArrayList;
 
 import junit.framework.TestCase;
+import socialnetwork.*;
 
 public class TestBlogImpl extends TestCase {
 

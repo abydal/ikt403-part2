@@ -9,13 +9,13 @@ import java.util.ArrayList;
  * @author Terje Brådland
  * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class AllCoursesImpl implements ICourse, IAllCourses {
+public class AllCoursesImpl implements IAllCourses {
 	/** 
 	 * @uml.annotations for <code>course</code>
 	 *     collection_type="Course"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<CourseImpl> course;
+	private ArrayList<ICourse> course;
 
 	/* (non-Javadoc)
 	 * @see ICourse#getCourse()
@@ -23,7 +23,7 @@ public class AllCoursesImpl implements ICourse, IAllCourses {
 	/* (non-Javadoc)
 	 * @see IAllCourses#getCourse()
 	 */
-	public ArrayList<CourseImpl> getCourse() {
+	public ArrayList<ICourse> getCourse() {
 		// begin-user-code
 		return course;
 		// end-user-code
@@ -35,7 +35,7 @@ public class AllCoursesImpl implements ICourse, IAllCourses {
 	/* (non-Javadoc)
 	 * @see IAllCourses#setCourse(java.util.ArrayList)
 	 */
-	public void setCourse(ArrayList<CourseImpl> theCourse) {
+	public void setCourse(ArrayList<ICourse> theCourse) {
 		// begin-user-code
 		course = theCourse;
 		// end-user-code
@@ -47,7 +47,7 @@ public class AllCoursesImpl implements ICourse, IAllCourses {
 	/* (non-Javadoc)
 	 * @see IAllCourses#addCourse(CourseImpl)
 	 */
-	public void addCourse(CourseImpl course) {
+	public void addCourse(ICourse course) {
 		// begin-user-code
 		// TODO Auto-generated method stub
 
@@ -60,7 +60,7 @@ public class AllCoursesImpl implements ICourse, IAllCourses {
 	/* (non-Javadoc)
 	 * @see IAllCourses#removeCourse(CourseImpl)
 	 */
-	public void removeCourse(CourseImpl course) {
+	public void removeCourse(ICourse course) {
 		// begin-user-code
 		// TODO Auto-generated method stub
 

@@ -1,7 +1,7 @@
-package socialnetwork;
+package tests;
 
 import junit.framework.TestCase;
-
+import socialnetwork.*;
 public class TestBlogPostImpl extends TestCase {
 
 	BlogPostImpl blogPost;

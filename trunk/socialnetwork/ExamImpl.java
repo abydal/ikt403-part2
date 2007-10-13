@@ -34,12 +34,12 @@ public class ExamImpl extends CourseImpl implements IExam {
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private CourseImpl course;
+	private ICourse course;
 
 	/* (non-Javadoc)
 	 * @see IExam#getCourse()
 	 */
-	public CourseImpl getCourse() {
+	public ICourse getCourse() {
 		// begin-user-code
 		return course;
 		// end-user-code
@@ -48,7 +48,7 @@ public class ExamImpl extends CourseImpl implements IExam {
 	/* (non-Javadoc)
 	 * @see IExam#setCourse(CourseImpl)
 	 */
-	public void setCourse(CourseImpl theCourse) {
+	public void setCourse(ICourse theCourse) {
 		// begin-user-code
 		course = theCourse;
 		// end-user-code

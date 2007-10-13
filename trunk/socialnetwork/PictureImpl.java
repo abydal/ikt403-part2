@@ -61,12 +61,12 @@ public class PictureImpl implements IPicture {
 	 *     collection_type="Album"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<AlbumImpl> album;
+	private ArrayList<IAlbum> album = new ArrayList<IAlbum>();
 
 	/* (non-Javadoc)
 	 * @see IPicture#getAlbum()
 	 */
-	public ArrayList<AlbumImpl> getAlbum() {
+	public ArrayList<IAlbum> getAlbum() {
 		// begin-user-code
 		return album;
 		// end-user-code
@@ -75,7 +75,7 @@ public class PictureImpl implements IPicture {
 	/* (non-Javadoc)
 	 * @see IPicture#setAlbum(java.util.ArrayList)
 	 */
-	public void setAlbum(ArrayList<AlbumImpl> theAlbum) {
+	public void setAlbum(ArrayList<IAlbum> theAlbum) {
 		// begin-user-code
 		album = theAlbum;
 		// end-user-code
@@ -86,12 +86,12 @@ public class PictureImpl implements IPicture {
 	 *     collection_type="Comment"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<CommentImpl> comment;
+	private ArrayList<IComment> comment = new ArrayList<IComment>();
 
 	/* (non-Javadoc)
 	 * @see IPicture#getComment()
 	 */
-	public ArrayList<CommentImpl> getComment() {
+	public ArrayList<IComment> getComment() {
 		// begin-user-code
 		return comment;
 		// end-user-code
@@ -100,7 +100,7 @@ public class PictureImpl implements IPicture {
 	/* (non-Javadoc)
 	 * @see IPicture#setComment(java.util.ArrayList)
 	 */
-	public void setComment(ArrayList<CommentImpl> theComment) {
+	public void setComment(ArrayList<IComment> theComment) {
 		// begin-user-code
 		comment = theComment;
 		// end-user-code
@@ -111,12 +111,12 @@ public class PictureImpl implements IPicture {
 	 *     collection_type="TagWord"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<TagWordImpl> tagword;
+	private ArrayList<ITagWord> tagword = new ArrayList<ITagWord>();
 
 	/* (non-Javadoc)
 	 * @see IPicture#getTagword()
 	 */
-	public ArrayList<TagWordImpl> getTagword() {
+	public ArrayList<ITagWord> getTagword() {
 		// begin-user-code
 		return tagword;
 		// end-user-code
@@ -125,7 +125,7 @@ public class PictureImpl implements IPicture {
 	/* (non-Javadoc)
 	 * @see IPicture#setTagword(java.util.ArrayList)
 	 */
-	public void setTagword(ArrayList<TagWordImpl> theTagword) {
+	public void setTagword(ArrayList<ITagWord> theTagword) {
 		// begin-user-code
 		tagword = theTagword;
 		// end-user-code
@@ -136,12 +136,12 @@ public class PictureImpl implements IPicture {
 	 *     collection_type="BlogPost"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<BlogPostImpl> blogpost;
+	private ArrayList<IBlogPost> blogpost = new ArrayList<IBlogPost>();
 
 	/* (non-Javadoc)
 	 * @see IPicture#getBlogpost()
 	 */
-	public ArrayList<BlogPostImpl> getBlogpost() {
+	public ArrayList<IBlogPost> getBlogpost() {
 		// begin-user-code
 		return blogpost;
 		// end-user-code
@@ -150,7 +150,7 @@ public class PictureImpl implements IPicture {
 	/* (non-Javadoc)
 	 * @see IPicture#setBlogpost(java.util.ArrayList)
 	 */
-	public void setBlogpost(ArrayList<BlogPostImpl> theBlogpost) {
+	public void setBlogpost(ArrayList<IBlogPost> theBlogpost) {
 		// begin-user-code
 		blogpost = theBlogpost;
 		// end-user-code
@@ -162,7 +162,7 @@ public class PictureImpl implements IPicture {
 	public void addTag(ITagWord tag) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		this.tagword.add(tag);
 		// end-user-code
 	}
 
@@ -172,7 +172,17 @@ public class PictureImpl implements IPicture {
 	public void removeTag(ITagWord tag) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		this.tagword.remove(tag);
 		// end-user-code
+	}
+
+	public void addComment(IComment comment) {
+		// TODO Auto-generated method stub
+		this.comment.add(comment);
+	}
+
+	public void removeComment(IComment comment) {
+		// TODO Auto-generated method stub
+		this.comment.remove(comment);
 	}
 }

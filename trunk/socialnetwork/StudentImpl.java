@@ -3,6 +3,7 @@ package socialnetwork;
  * 
  */
 
+
 import java.util.ArrayList;
 
 /** 
@@ -240,6 +241,33 @@ public class StudentImpl implements IStudent {
 		// end-user-code
 	}
 
+
+	/** 
+	 * @uml.annotations for <code>album</code>
+	 *     collection_type="Album"
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	private ArrayList<IAlbum> album = new ArrayList<IAlbum>();
+	
+
+	/* (non-Javadoc)
+	 * @see IStudent#getAlbum()
+	 */
+	public ArrayList<IAlbum> getAlbum() {
+		// begin-user-code
+		return album;
+		// end-user-code
+	}
+
+	/* (non-Javadoc)
+	 * @see IStudent#setAlbum(java.util.ArrayList)
+	 */
+	public void setAlbum(ArrayList<IAlbum> theAlbum) {
+		// begin-user-code
+		album = theAlbum;
+		// end-user-code
+	}
+	
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
@@ -262,27 +290,38 @@ public class StudentImpl implements IStudent {
 		event = theEvent;
 		// end-user-code
 	}
-
-	/** 
-	 * @uml.annotations for <code>album</code>
-	 *     collection_type="Album"
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	private ArrayList<IAlbum> album;
-
 	/** 
 	 * @uml.annotations for <code>comment</code>
 	 *     collection_type="Comment"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<IComment> comment;
+	private ArrayList<IComment> comment = new ArrayList<IComment>();
 
+
+
+	/* (non-Javadoc)
+	 * @see IStudent#getComment()
+	 */
+	public ArrayList<IComment> getComment() {
+		// begin-user-code
+		return comment;
+		// end-user-code
+	}
+	
+	/* (non-Javadoc)
+	 * @see IStudent#setComment(java.util.ArrayList)
+	 */
+	public void setComment(ArrayList<IComment> theComment) {
+		// begin-user-code
+		comment = theComment;
+		// end-user-code
+	}
 	/** 
 	 * @uml.annotations for <code>arrangedby</code>
 	 *     collection_type="Event"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<IEvent> arrangedby;
+	private ArrayList<IEvent> arrangedby = new ArrayList<IEvent>();
 
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
@@ -312,7 +351,7 @@ public class StudentImpl implements IStudent {
 	 *     collection_type="Friendship"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<IFriendship> friendship;
+	private ArrayList<IFriendship> friendship = new ArrayList<IFriendship>();
 
 	/**
 	 * @return the friendship
@@ -381,48 +420,79 @@ public class StudentImpl implements IStudent {
 	}
 
 	/** 
+	 * @uml.annotations for <code>eventrole</code>
+	 *     collection_type="EventRole"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private IEventRole eventrole;
+	private ArrayList<IEventRole> eventrole = new ArrayList<IEventRole>();
 
-	/* (non-Javadoc)
-	 * @see IStudent#getEventrole()
+	/** 
+	 * @return the eventrole
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public IEventRole getEventrole() {
+	public ArrayList<IEventRole> getEventrole() {
 		// begin-user-code
 		return eventrole;
 		// end-user-code
 	}
 
-	/* (non-Javadoc)
-	 * @see IStudent#setEventrole(IEventRole)
+	/** 
+	 * @param theEventrole the eventrole to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void setEventrole(IEventRole theEventrole) {
+	public void setEventrole(ArrayList<IEventRole> theEventrole) {
 		// begin-user-code
 		eventrole = theEventrole;
 		// end-user-code
 	}
+
 
 	/** 
 	 * @uml.annotations for <code>receives</code>
 	 *     collection_type="ChatMessage"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<ChatMessageImpl> receives;
+	private ArrayList<IChatMessage> receives = new ArrayList<IChatMessage>();
+	
+	public ArrayList<IChatMessage> getReceives() {
+		// begin-user-code
+		return receives;
+		// end-user-code
+	}
+
+	/* (non-Javadoc)
+	 * @see IStudent#setReceives(java.util.ArrayList)
+	 */
+	public void setReceives(ArrayList<IChatMessage> theReceives) {
+		// begin-user-code
+		receives = theReceives;
+		// end-user-code
+	}
 
 	/** 
 	 * @uml.annotations for <code>sends</code>
 	 *     collection_type="ChatMessage"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<ChatMessageImpl> sends;
+	private ArrayList<IChatMessage> sends = new ArrayList<IChatMessage>();
 
-	/** 
-	 * @uml.annotations for <code>student</code>
-	 *     collection_type="Student"
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	/* (non-Javadoc)
+	 * @see IStudent#getSends()
 	 */
-	private ArrayList<StudentImpl> student;
+	public ArrayList<IChatMessage> getSends() {
+		// begin-user-code
+		return sends;
+		// end-user-code
+	}
+
+	/* (non-Javadoc)
+	 * @see IStudent#setSends(java.util.ArrayList)
+	 */
+	public void setSends(ArrayList<IChatMessage> theSends) {
+		// begin-user-code
+		sends = theSends;
+		// end-user-code
+	}
 
 	/** 
 	 * @uml.annotations for <code>blog</code>
@@ -430,13 +500,28 @@ public class StudentImpl implements IStudent {
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	private IBlog blog;
+	
+	public IBlog getBlog() {
+		// begin-user-code
+		return blog;
+		// end-user-code
+	}
 
+	/* (non-Javadoc)
+	 * @see IStudent#setBlog(Blog)
+	 */
+	public void setBlog(IBlog theBlog) {
+		// begin-user-code
+		blog = theBlog;
+		// end-user-code
+	}
+	
 	/** 
 	 * @uml.annotations for <code>exam</code>
 	 *     collection_type="Exam"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<ExamImpl> exam;
+	private ArrayList<IExam> exam = new ArrayList<IExam>();
 	
 	/* (non-Javadoc)
 	 * @see IStudent#addFriend(IStudent)
@@ -444,7 +529,18 @@ public class StudentImpl implements IStudent {
 	public void addFriend(IStudent friend) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		//Creating friendship and sets the one initiating and the future friend
+		
+		FriendshipImpl f = new FriendshipImpl();
+		f.setInitates(this);
+		f.setFriend(friend);
+		
+		//Add the friendship to the lists in the objects
+		this.friendship.add(f);
+		ArrayList<IFriendship> modified = friend.getFriendship();
+		modified.add(f);
+		friend.setFriendship(modified);
+		
 		// end-user-code
 	}
 
@@ -454,7 +550,30 @@ public class StudentImpl implements IStudent {
 	public void removeFriend(IStudent friend) {
 		// begin-user-code
 		// TODO Auto-generated method stub
+		for(IFriendship i: friendship )
+		{
+			if(i.getFriend()==friend)
+			{
+				//Remove from my list
+				this.friendship.remove(i);
+				break;
+			}
+			
+		}
+		
+		
+		for(IFriendship friends: friend.getFriendship() )
+		{	
+			if(friends.getFriend()==friend)
+			{	
+				//Remove from my previous friends lsit
+				ArrayList<IFriendship> modified = friend.getFriendship();
+				modified.remove(friends);
+				friend.setFriendship(modified);
 
+				break;
+			}
+		}
 		// end-user-code
 	}
 
@@ -464,7 +583,7 @@ public class StudentImpl implements IStudent {
 	public void addExam(IExam exam) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		this.exam.add(exam);
 		// end-user-code
 	}
 
@@ -474,7 +593,7 @@ public class StudentImpl implements IStudent {
 	public void removeExam(IExam exam) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		this.exam.remove(exam);
 		// end-user-code
 	}
 
@@ -484,7 +603,7 @@ public class StudentImpl implements IStudent {
 	public void addAlbum(IAlbum album) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		this.album.add(album);
 		// end-user-code
 	}
 
@@ -494,24 +613,27 @@ public class StudentImpl implements IStudent {
 	public void removeAlbum(IAlbum album) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		this.album.remove(album);
 		// end-user-code
 	}
 
 	/* (non-Javadoc)
 	 * @see IStudent#addEvent(EventImpl)
 	 */
-	public void addEvent(IEvent Parameter1) {
+	public void addEvent(IEventRole eventrole) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		//this..e(evenrole);
 		// end-user-code
+		EventImpl event = new EventImpl();
+		event.addParticipant(eventrole);
+		
 	}
 
 	/* (non-Javadoc)
 	 * @see IStudent#removeEvent(EventImpl)
 	 */
-	public void removeEvent(IEvent Parameter1) {
+	public void removeEvent(IEventRole eventrole) {
 		// begin-user-code
 		// TODO Auto-generated method stub
 
@@ -521,10 +643,11 @@ public class StudentImpl implements IStudent {
 	/* (non-Javadoc)
 	 * @see IStudent#searchExams(java.lang.String)
 	 */
-	public void searchExams(String searchString) {
+	public ArrayList<IExam> searchExams(String searchString) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		
+		return null;
 		// end-user-code
 	}
 
@@ -534,7 +657,7 @@ public class StudentImpl implements IStudent {
 	public void joinCommunity(ICommunity community) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		
 		// end-user-code
 	}
 
@@ -544,7 +667,7 @@ public class StudentImpl implements IStudent {
 	public void createCommunity(ICommunity community) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		this.community.add(community);
 		// end-user-code
 	}
 
@@ -552,9 +675,9 @@ public class StudentImpl implements IStudent {
 	 * @see IStudent#createMessage(IChatMessage)
 	 */
 	public void createMessage(IChatMessage message) {
-		// begin-user-code
+		// begin-user-code,
 		// TODO Auto-generated method stub
-
+		this.sends.add(message);
 		// end-user-code
 	}
 
@@ -564,99 +687,77 @@ public class StudentImpl implements IStudent {
 	public void removeMessage(IChatMessage message) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		
+		//Removes/deletes a received message
+		this.receives.remove(message);
 		// end-user-code
 	}
 
 	/* (non-Javadoc)
 	 * @see IStudent#searchMessages(java.lang.String)
 	 */
-	public void searchMessages(String searchString) {
+	public ArrayList<IChatMessage> searchMessages(String searchString) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		
+		ArrayList<IChatMessage> result = new ArrayList<IChatMessage>();
+		
+		//Search the recieved
+		for(IChatMessage m: receives)
+		{
+			if(m.getContent().contains(searchString))
+			{
+				result.add(m);
+			}
+		}
+		
+		//Search the sent
+		for(IChatMessage m: sends)
+		{
+			if(m.getContent().contains(searchString))
+			{
+				result.add(m);
+			}
+		}
 		// end-user-code
-	}
-
-	public ArrayList<IAlbum> getAlbum() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public ArrayList<IEvent> getArrangedby() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public IBlog getBlog() {
-		// TODO Auto-generated method stub
-		return this.blog;
-	}
-
-	public ArrayList<IComment> getComment() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return result;
 	}
 
 	public ArrayList<IExam> getExam() {
-		// TODO Auto-generated method stub
-		return null;
+		// begin-user-code
+		return exam;
+		// end-user-code
 	}
 
-
-	public ArrayList<IChatMessage> getReceives() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public ArrayList<IChatMessage> getSends() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public ArrayList<IStudent> getStudent() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void setAlbum(ArrayList<IAlbum> theAlbum) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setArrangedby(ArrayList<IEvent> theArrangedby) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setBlog(IBlog theBlog) {
-		this.blog = theBlog;
-		
-	}
-
-	public void setComment(ArrayList<IComment> theComment) {
-		// TODO Auto-generated method stub
-		
-	}
-
+	/* (non-Javadoc)
+	 * @see IStudent#setExam(java.util.ArrayList)
+	 */
 	public void setExam(ArrayList<IExam> theExam) {
-		// TODO Auto-generated method stub
-		
+		// begin-user-code
+		exam = theExam;
+		// end-user-code
+	}
+	
+	private ArrayList<ICommunity> community = new ArrayList<ICommunity>();
+
+	/** 
+	 * @return the community
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public ArrayList<ICommunity> getCommunity() {
+		// begin-user-code
+		return community;
+		// end-user-code
 	}
 
-
-	public void setReceives(ArrayList<IChatMessage> theReceives) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setSends(ArrayList<IChatMessage> theSends) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setStudent(ArrayList<IStudent> theStudent) {
-		// TODO Auto-generated method stub
-		
+	/** 
+	 * @param theCommunity the community to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public void setCommunity(ArrayList<ICommunity> theCommunity) {
+		// begin-user-code
+		community = theCommunity;
+		// end-user-code
 	}
 }

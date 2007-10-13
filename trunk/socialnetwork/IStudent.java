@@ -1,4 +1,5 @@
 package socialnetwork;
+
 import java.util.ArrayList;
 
 public interface IStudent {
@@ -124,16 +125,16 @@ public interface IStudent {
 	public abstract void setZipcode(String theZipcode);
 
 	/** 
-	 * @return the event
+	 * @return the eventrole
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract IEvent getEvent();
+	public abstract ArrayList<IEventRole> getEventrole();
 
 	/** 
-	 * @param theEvent the event to set
+	 * @param theEventrole the eventrole to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setEvent(IEvent theEvent);
+	public abstract void setEventrole(ArrayList<IEventRole> theEventrole);
 
 	/** 
 	 * @return the album
@@ -206,18 +207,6 @@ public interface IStudent {
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public abstract void setIsonline(Boolean theIsonline);
-
-	/** 
-	 * @return the eventrole
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public abstract IEventRole getEventrole();
-
-	/** 
-	 * @param theEventrole the eventrole to set
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public abstract void setEventrole(IEventRole theEventrole);
 
 	/** 
 	 * @return the receives
@@ -304,22 +293,22 @@ public interface IStudent {
 	public abstract void removeAlbum(IAlbum album);
 
 	/** 
-	 * @param Parameter1
+	 * @param eventrole
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void addEvent(IEvent Parameter1);
+	public abstract void addEvent(IEventRole eventrole);
 
 	/** 
-	 * @param Parameter1
+	 * @param eventrole
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void removeEvent(IEvent Parameter1);
+	public abstract void removeEvent(IEventRole eventrole);
 
 	/** 
 	 * @param searchString
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void searchExams(String searchString);
+	public abstract ArrayList<IExam> searchExams(String searchString);
 
 	/** 
 	 * @param community
@@ -349,6 +338,18 @@ public interface IStudent {
 	 * @param searchString
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void searchMessages(String searchString);
+	public abstract ArrayList<IChatMessage> searchMessages(String searchString);
+
+	/** 
+	 * @return the community
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public abstract ArrayList<ICommunity> getCommunity();
+
+	/** 
+	 * @param theCommunity the community to set
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public abstract void setCommunity(ArrayList<ICommunity> theCommunity);
 
 }

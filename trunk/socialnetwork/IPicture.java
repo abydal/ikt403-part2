@@ -31,49 +31,50 @@ public interface IPicture {
 	 * @return the album
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<AlbumImpl> getAlbum();
+	public abstract ArrayList<IAlbum> getAlbum();
 
 	/** 
 	 * @param theAlbum the album to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setAlbum(ArrayList<AlbumImpl> theAlbum);
+	public abstract void setAlbum(ArrayList<IAlbum> theAlbum);
+	
 
 	/** 
 	 * @return the comment
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<CommentImpl> getComment();
+	public abstract ArrayList<IComment> getComment();
 
 	/** 
 	 * @param theComment the comment to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setComment(ArrayList<CommentImpl> theComment);
+	public abstract void setComment(ArrayList<IComment> theComment);
 
 	/** 
 	 * @return the tagword
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<TagWordImpl> getTagword();
+	public abstract ArrayList<ITagWord> getTagword();
 
 	/** 
 	 * @param theTagword the tagword to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setTagword(ArrayList<TagWordImpl> theTagword);
+	public abstract void setTagword(ArrayList<ITagWord> theTagword);
 
 	/** 
 	 * @return the blogpost
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<BlogPostImpl> getBlogpost();
+	public abstract ArrayList<IBlogPost> getBlogpost();
 
 	/** 
 	 * @param theBlogpost the blogpost to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setBlogpost(ArrayList<BlogPostImpl> theBlogpost);
+	public abstract void setBlogpost(ArrayList<IBlogPost> theBlogpost);
 
 	/** 
 	 * @param tag
@@ -86,5 +87,17 @@ public interface IPicture {
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public abstract void removeTag(ITagWord tag);
+	
+	/** 
+	 * @param comment
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public abstract void addComment(IComment comment);
+	
+	/** 
+	 * @param comment
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public abstract void removeComment(IComment comment);
 
 }

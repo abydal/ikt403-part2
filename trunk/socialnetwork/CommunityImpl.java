@@ -9,30 +9,7 @@ import java.util.ArrayList;
  * @author Terje Brådland
  * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class CommunityImpl implements ICommunity {
-	/** 
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	private IBlog blog;
-
-	/* (non-Javadoc)
-	 * @see ICommunity#getBlog()
-	 */
-	public IBlog getBlog() {
-		// begin-user-code
-		return blog;
-		// end-user-code
-	}
-
-	/* (non-Javadoc)
-	 * @see ICommunity#setBlog(IBlog)
-	 */
-	public void setBlog(IBlog theBlog) {
-		// begin-user-code
-		blog = theBlog;
-		// end-user-code
-	}
-
+public class CommunityImpl extends UserBoardImpl implements ICommunity {
 	/** 
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
@@ -61,12 +38,12 @@ public class CommunityImpl implements ICommunity {
 	 *     collection_type="Student"
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private ArrayList<StudentImpl> memberof;
+	private ArrayList<IStudent> memberof = new ArrayList<IStudent>();
 
 	/* (non-Javadoc)
 	 * @see ICommunity#getMemberof()
 	 */
-	public ArrayList<StudentImpl> getMemberof() {
+	public ArrayList<IStudent> getMemberof() {
 		// begin-user-code
 		return memberof;
 		// end-user-code
@@ -75,7 +52,7 @@ public class CommunityImpl implements ICommunity {
 	/* (non-Javadoc)
 	 * @see ICommunity#setMemberof(java.util.ArrayList)
 	 */
-	public void setMemberof(ArrayList<StudentImpl> theMemberof) {
+	public void setMemberof(ArrayList<IStudent> theMemberof) {
 		// begin-user-code
 		memberof = theMemberof;
 		// end-user-code
@@ -87,7 +64,7 @@ public class CommunityImpl implements ICommunity {
 	public void addParticipant(IStudent participant) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		memberof.add(participant);
 		// end-user-code
 	}
 
@@ -97,7 +74,7 @@ public class CommunityImpl implements ICommunity {
 	public void removeParticipant(IStudent participant) {
 		// begin-user-code
 		// TODO Auto-generated method stub
-
+		memberof.remove(participant);
 		// end-user-code
 	}
 }

@@ -65,18 +65,6 @@ public interface IEvent {
 	public abstract void setEndDate(Integer theEndDate);
 
 	/** 
-	 * @return the student
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public abstract IStudent getStudent();
-
-	/** 
-	 * @param theStudent the student to set
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public abstract void setStudent(IStudent theStudent);
-
-	/** 
 	 * @return the description
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
@@ -101,18 +89,6 @@ public interface IEvent {
 	public abstract void setAlbum(IAlbum theAlbum);
 
 	/** 
-	 * @return the arranges
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public abstract IStudent getArranges();
-
-	/** 
-	 * @param theArranges the arranges to set
-	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public abstract void setArranges(IStudent theArranges);
-
-	/** 
 	 * @return the _private
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
@@ -128,25 +104,25 @@ public interface IEvent {
 	 * @return the comment
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<CommentImpl> getComment();
+	public abstract ArrayList<IComment> getComment();
 
 	/** 
 	 * @param theComment the comment to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setComment(ArrayList<CommentImpl> theComment);
+	public abstract void setComment(ArrayList<IComment> theComment);
 
 	/** 
 	 * @return the eventrole
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract ArrayList<EventRoleImpl> getEventrole();
+	public abstract ArrayList<IEventRole> getEventrole();
 
 	/** 
 	 * @param theEventrole the eventrole to set
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void setEventrole(ArrayList<EventRoleImpl> theEventrole);
+	public abstract void setEventrole(ArrayList<IEventRole> theEventrole);
 
 	/** 
 	 * @param comment
@@ -159,5 +135,17 @@ public interface IEvent {
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public abstract void removeComment(IComment comment);
+
+	/** 
+	 * @param role
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public abstract void addParticipant(IEventRole role);
+
+	/** 
+	 * @param eventrole
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public abstract void removeParticipant(IEventRole eventrole);
 
 }

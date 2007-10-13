@@ -1,9 +1,9 @@
-package socialnetwork;
+package tests;
 
 import java.util.ArrayList;
 
 import junit.framework.TestCase;
-
+import socialnetwork.*;
 public class TestStudentImpl extends TestCase {
 
 	StudentImpl testObject1;
@@ -32,7 +32,9 @@ public class TestStudentImpl extends TestCase {
 	}
 
 	public void testRemoveFriend() {
+	
 		testObject1.addFriend(testObject2);
+		
 		ArrayList<IFriendship> result = testObject1.getFriendship();
 		assertEquals(1,result.size());
 		result = testObject2.getFriendship();

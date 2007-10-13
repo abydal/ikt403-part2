@@ -618,16 +618,25 @@ public class StudentImpl implements IStudent {
 	}
 
 	/* (non-Javadoc)
-	 * @see IStudent#addEvent(EventImpl)
+	 * @see IStudent#createEvent(EventImpl)
 	 */
-	public void addEvent(IEventRole eventrole) {
+	public void createEvent(IEventRole eventrole) {
 		// begin-user-code
 		// TODO Auto-generated method stub
 		//this..e(evenrole);
-		// end-user-code
-		EventImpl event = new EventImpl();
-		event.addParticipant(eventrole);
-		
+		// end-user-code	
+	}
+	
+	/* (non-Javadoc)
+	 * @see IStudent#joinEvent(EventImpl)
+	 */
+	public void joinEvent(IEvent event) {
+		EventRoleImpl role = new EventRoleImpl();
+		role.setParticipant(true);
+		role.setEvent(event);
+		role.setStudent(this);
+		event.addParticipant(role);
+		this.eventrole.add(role);
 	}
 
 	/* (non-Javadoc)

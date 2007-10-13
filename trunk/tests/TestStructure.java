@@ -59,9 +59,9 @@ public class TestStructure extends TestCase {
 		blogObject.addBlogPost(blogPostObject2);
 		blogObject.addBlogPost(blogPostObject3);
 		
-		for(int i = 3; i > 0; i--)
+		for(int i = 2; i > -1; i--)
 		{
-			for(int c = 0; i < 2; i++)
+			for(int c = 0; c < 2; c++)
 			{
 				if(c == 0)
 					assertEquals("This blog sux!",dummyStudent2.getBlog().getBlogpost().get(i).getComment().get(c).getContent());

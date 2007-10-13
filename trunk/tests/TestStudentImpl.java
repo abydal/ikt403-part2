@@ -63,8 +63,24 @@ public class TestStudentImpl extends TestCase {
 		fail("Not yet implemented");
 	}
 
-	public void testAddEvent() {
-		fail("Not yet implemented");
+	public void testCreateEvent() {
+		EventImpl dummyEvent = new EventImpl();
+		EventRoleImpl role = new EventRoleImpl();
+		
+		testObject1.createEvent(role);
+				
+		assertEquals(1,dummyEvent.eventrole.size());
+		assertEquals(1, testObject1.getEventrole().size());
+		assertEquals(true, (boolean)testObject1.getEventrole().get(0).getOrganizer());
+	}
+	
+	public void testJoinEvent() {
+		EventImpl dummyEvent = new EventImpl();
+		testObject1.joinEvent(dummyEvent);
+		
+		assertEquals(1,dummyEvent.eventrole.size());
+		assertEquals(1, testObject1.getEventrole().size());
+		assertEquals(true, (boolean)testObject1.getEventrole().get(0).getParticipant());
 	}
 
 	public void testRemoveEvent() {

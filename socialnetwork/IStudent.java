@@ -296,7 +296,13 @@ public interface IStudent {
 	 * @param eventrole
 	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public abstract void addEvent(IEventRole eventrole);
+	public abstract void createEvent(IEventRole eventrole);
+	
+	/** 
+	 * @param eventrole
+	 * @generated "UML to Java V5.0 (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public abstract void joinEvent(IEvent event);
 
 	/** 
 	 * @param eventrole

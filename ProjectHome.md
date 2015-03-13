@@ -1,0 +1,1 @@
+This is part two of a project were we were supposed to model a social network and now we're going to implement it in java.
